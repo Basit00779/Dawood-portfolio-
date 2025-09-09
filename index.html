@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dawood - Here </title>
+</head>
+
+   <style>
+
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(84, 84, 241);
+        }
+
+        #container{
+            height: 45rem;
+            width: 80%;
+            display: flex;
+            flex-direction:column ;
+            justify-content: center;
+            background-color: #ffff;
+            padding: 0px 20px 0px 20px;
+            box-shadow: -13px 12px 5px 0px rgba(0,0,0,0.16) inset;
+            -webkit-box-shadow: -13px 12px 5px 0px rgba(0,0,0,0.16) inset;
+            -moz-box-shadow: -13px 12px 5px 0px rgba(0,0,0,0.16) inset;
+        }
+
+        #container img{
+            height: 7rem;
+            width: 7rem;
+            border-radius: 50%;
+            border: 1px solid black;
+            object-fit: cover;
+            object-position: center;
+            margin: 10px;
+        }
+
+        #container p,h1,h2{
+            margin: 5px;
+        }
+
+        #container h1,h2{
+            font-family: "Quicksand", sans-serif;
+            font-optical-sizing: auto;
+            
+
+        }
+
+        #container p{
+            line-height: 1.8;
+            color:grey;
+        }
+
+        #container .input-btn{
+            height: 30px;
+            width: 100%;
+            display: flex;
+           
+            align-items: center;
+        }
+
+        .input-btn #mail{
+            border: none;
+            padding: 10px;
+            background-color: whitesmoke;
+            outline: none;
+            font-size: 12px;
+        }
+
+        .input-btn .subscribe{
+            border: none;
+            padding: 10px;
+            background-color: rgb(84, 84, 241);
+            color: #ffff;
+            cursor: pointer;
+            
+
+        }
+
+        #contact{
+            height: 60px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #contact .social{
+            height: 60px;
+            width: 35%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .social .options{
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            padding: 5px;
+            background-color:  whitesmoke;
+            cursor: pointer;
+            
+        }
+
+    </style>
+<body>
+    <div id="container">
+        <img src="logo.jpeg" alt="">
+        <h1>Hey there - I'm Dawood</h1>
+        <p>Welcome to my portfolio! I’m Dawood, a Computer Science student passionate about programming,with Islamic values for positive impact.</p>
+        <p><strong style="color:black ;">Subscribe to Design insights below.</strong></p>
+        <div class="input-btn">
+            <input type="email" placeholder="Enter your Email" name="" id="mail">
+            <button class="subscribe">Subscribe</button>
+        </div>
+
+        <hr class="horizantal-row">
+        <h2>A little about me:</h2>
+        <p>I am a Computer Science student passionate about programming, cryptography, and technology. Alongside my academic journey, I pursue Islamic knowledge, which shapes my values and vision. I aim to blend modern skills with Islamic principles to contribute positively to society.</p>
+        
+        <div id="contact">
+            <h2>My social media handles:</h2>
+             <div class="social">
+                <div class="options" onclick="fb();"><i class="fa-brands fa-facebook fa-lg" style="color: #2273f7;"></i></div>
+                <div class="options" onclick="ins();"><i class="fa-brands fa-instagram fa-lg" style="color: #ea6134;"></i></div>
+                <div class="options" onclick="snap()"><i class="fa-brands fa-snapchat fa-lg" style="color: #FFD43B;"></i></div>
+                <div class="options" onclick="whatsApp()"><i class="fa-brands fa-whatsapp fa-lg" style="color: #52d51a;"></i></div>
+             </div>
+        </div>
+</body>
+        <script>
+            function fb(){
+                location.href="https://www.facebook.com/share/16m66esWX5/"
+            }
+
+            function ins(){
+                location.href="https://www.instagram.com/itz_dk_dawood_?igsh=anM0c2tzZWRxdmY5"
+            }
+
+            function snap(){
+                location.href="https://www.snapchat.com/add/dkdawood2026520?share_id=O71eNQO8RRA&locale=en-IN"
+            }
+
+            function whatsApp(){
+                location.href="https://wa.link/c8zjek"
+            }
+        </script>
+</html>
